@@ -17,7 +17,7 @@ CREATE TABLE users
 CREATE UNIQUE INDEX users_unique_email_idx ON users (email);
 
 CREATE TABLE user_roles
-(å
+(
   user_id INTEGER NOT NULL,
   role    VARCHAR,
   CONSTRAINT user_roles_idx UNIQUE (user_id, role),
